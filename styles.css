@@ -28,3 +28,7 @@
   #en { display:block; }
   .lang:target ~ #en { display:none; }
   @media print { header { position:static; } .lang { display:block !important; } }
+
+  /* Wrapping language navigation must not cover the heading reached by a fragment. */
+  .privacy-policy header { position:static; }
+  .privacy-policy .lang { scroll-margin-top:0; }
